@@ -8,7 +8,7 @@
 }
 
 .bg-animated {
-    background: linear-gradient(-45deg, #000000, #1a1a1a, #000033, #003366);
+
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
@@ -19,12 +19,12 @@
     100% { background-position: 0% 50%; }
 }
 
-.cyber-grid {
+/* .cyber-grid {
     background-image: linear-gradient(rgba(0, 255, 255, 0.1) 1px, transparent 1px),
                       linear-gradient(90deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
     background-size: 20px 20px;
     animation: cyber-grid-move 20s linear infinite;
-}
+} */
 
 @keyframes cyber-grid-move {
     0% { background-position: 0 0; }
@@ -32,15 +32,15 @@
 }
 
 .feature-card {
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(0, 255, 255, 0.1);
+    /* backdrop-filter: blur(10px); */
     transition: all 0.3s ease;
+    background: #fff;
+    border:1px solid #00ffff;
 }
 
 .feature-card:hover {
     transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    box-shadow: 0 0 20px #ffb302;
 }
 
 .feature-icon {
@@ -60,7 +60,7 @@
     animation: float 6s ease-in-out infinite;
 }
 
-.glitch-effect {
+/* .glitch-effect {
     position: relative;
     overflow: hidden;
 }
@@ -88,13 +88,13 @@
     text-shadow: -2px 0 #00ffff;
     clip: rect(85px, 550px, 140px, 0);
     animation: glitch-anim 2s infinite linear alternate-reverse;
-}
+} */
 
-@keyframes glitch-anim {
+/* @keyframes glitch-anim {
     0% { clip: rect(39px, 9999px, 71px, 0); }
     20% { clip: rect(3px, 9999px, 5px, 0); }
     40% { clip: rect(6px, 9999px, 38px, 0); }
     60% { clip: rect(13px, 9999px, 43px, 0); }
     80% { clip: rect(44px, 9999px, 93px, 0); }
     100% { clip: rect(54px, 9999px, 47px, 0); }
-}
+} */
