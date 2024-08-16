@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 
 
-const Banner = ({ imageUrl }) => {
+const Banner = ({ imageUrl }:any) => {
     useEffect(() => {
         AOS.init({ duration: 3000 }); // Initialize AOS with custom options
     }, []);

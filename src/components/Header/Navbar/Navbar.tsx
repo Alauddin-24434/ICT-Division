@@ -1,10 +1,10 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 const Navbar = () => {
     return (
-        <div className="bg-white shadow-md">
+        <div className=" navbar shadow-md">
             {/* Top Section with Social Media Icons */}
             <div className="flex justify-end items-center p-2 space-x-4 text-gray-600">
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
@@ -22,7 +22,7 @@ const Navbar = () => {
             <hr className="border-gray-300" />
 
             {/* Bottom Section with Logo, Navigation Links, and Search Bar */}
-            <nav className="flex justify-between items-center p-4">
+            <nav className="flex bg-[#05dac3] justify-between items-center p-4">
                 {/* Logo */}
                 <div className="text-2xl font-bold text-gray-800">
                     <Link to="/">Logo</Link>

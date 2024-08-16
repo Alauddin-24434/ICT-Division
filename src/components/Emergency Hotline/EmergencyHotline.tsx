@@ -41,18 +41,18 @@ const EmergencyHotline = () => {
   return (
     <div >
         <section  >
-      <div data-aos="fade-right" className="mx-auto max-w-7xl grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 2xl:grid-cols-5 gap-12 p-2">
+      <div data-aos="fade-up" className="mx-auto max-w-7xl grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 2xl:grid-cols-5 gap-12 p-2">
         {emergencyHotlines.map((hotline, index) => (
           <div
             key={index}
-            className="hotlineCard flex flex-col items-center p-4 border relative"
+            className=" hotlineCard flex flex-col items-center h-[100px] w-full md:w-[180px]  md:h-[120px] p-4 border relative"
           >
             <div  className=" triangle triangle-bottom-left"></div>
             <div className="triangle triangle-top-right"></div>
            <div className='avater absolute -top-6 rounded-full border-2  '>
            <img src={hotline.icon} className="w-14 h-14 rounded-full  border-2" alt="" />
            </div>
-            <span className="font-semibold text-center text-sm">{hotline.title}</span>
+            <span className="font-semibold text-center text-sm">{hotline.title}.</span>
           </div>
         ))}
       </div>

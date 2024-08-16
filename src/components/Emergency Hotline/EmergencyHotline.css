@@ -1,11 +1,15 @@
 .hotlineCard {
     position: relative; /* Ensure triangles are positioned relative to the card */
-height: 120px;
+
     background-color: #fff; /* Background color for the card */
     border: 1px solid #ddd; /* Border for the card */
-  width: 180px;
+
   justify-content: center;
+
     transition: transform 0.3s ease; /* Smooth transition for hover effects */
+  }
+  .hotlineCard:hover{
+    cursor: pointer;
   }
   
   .hotlineCard:hover {
