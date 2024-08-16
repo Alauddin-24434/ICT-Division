@@ -1,16 +1,26 @@
+
+
 const emergencyHotlines = [
-    { icon: "🚒", title: "Fire Emergency Hotline" },
-    { icon: "🚓", title: "Police Emergency Hotline" },
-    { icon: "🚑", title: "Medical Emergency Hotline" },
-    { icon: "🛥️", title: "Coast Guard Hotline" },
-    { icon: "🔥", title: "Gas Leak Emergency" },
-    { icon: "⚡", title: "Electric Hazard Hotline" },
-    { icon: "🌪️", title: "Disaster Response Hotline" },
-    { icon: "🧠", title: "Mental Health Support" },
-    { icon: "🐕", title: "Animal Control Hotline" },
-    { icon: "☠️", title: "Poison Control Center" },
-    { icon: "🌊", title: "Flood Emergency Hotline" },
-    { icon: "🕵️", title: "Missing Persons Hotline" },
+
+  
+    { icon: "🛥️", title: "Government Information Service" },
+    { icon: "🔥", title: "Emergency Service" },
+    { icon: "⚡", title: "Fire Service Help Desk" },
+    { icon: "🌪️", title: "To prevent violence against women and children" },
+    { icon: "🧠", title: "Dudok Hotline" },
+    { icon: "🐕", title: "Early warning of disasters" },
+    { icon: "☠️", title: "Smart land services" },
+    { icon: "🌊", title: "Call child support"},
+    { icon: "🕵️", title: "Bangladesh Employees Welfare Board Hotline" },
+    { icon: "🕵️", title: "Narcotics Control Hotline" },
+    { icon: "🕵️", title: "BIWTA Hotline" },
+    { icon: "🕵️", title: "Passport Bataon Hotline" },
+    { icon: "🕵️", title: "Bangladesh Liberation War Welfare Trust" },
+    { icon: "🕵️", title: "Bangladesh Freedom Fighter Welfare Trust" },
+    { icon: "🕵️", title: "E-GP Helpline No" },
+    { icon: "🕵️", title: "BTRC Helpline No" },
+    { icon: "🕵️", title: "Electricity Department Services Helpline No" },
+
 ];
 
 const EmergencyHotline = () => {
