@@ -22,20 +22,23 @@ const emergencyHotlines = [
     { icon: "🕵️", title: "Electricity Department Services Helpline No" },
 
 ];
-
 const EmergencyHotline = () => {
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-4 p-4">
-            {emergencyHotlines.map((hotline, index) => (
-                <div
-                    key={index}
-                    className="flex flex-col items-center p-4 border rounded-lg shadow-lg hover:shadow-xl transition-shadow w-full sm:w-72"
-                >
-                    <span className="text-4xl mb-2">{hotline.icon}</span>
-                    <span className="font-semibold text-center text-lg">{hotline.title}</span>
-                </div>
-            ))}
-        </div>
+     <section className=" ">
+
+   
+            <div className="mx-auto max-w-6xl grid sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 2xl:grid-cols-5 gap-4 p-2">
+                {emergencyHotlines.map((hotline, index) => (
+                    <div
+                        key={index}
+                        className="flex flex-col items-center p-4 border rounded-lg  w-40 h-40  "
+                    >
+                        <span className="text-4xl mb-2">{hotline.icon}</span>
+                        <span className="font-semibold text-center text-sm">{hotline.title}</span>
+                    </div>
+                ))}
+            </div>
+            </section>
     );
 };
 
