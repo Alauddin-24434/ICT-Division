@@ -16,7 +16,7 @@ const Banner = ({ imageUrl }:any) => {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 width: '100%',
-                height: '700px', // Adjust height as needed
+                height: '100vh', // Adjust height as needed
                 display: 'flex',
                 justifyContent: 'flex-start', // Aligns content to the left
                 alignItems: 'center',

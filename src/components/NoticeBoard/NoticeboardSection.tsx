@@ -1,7 +1,6 @@
 
 import { useSpring, animated } from '@react-spring/web';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell } from '@fortawesome/free-solid-svg-icons';
+
 import './NoticeboardSection.css'; // Import CSS for additional styling
 import AdvisorAndSecretarySection from '../AdvisorAndSecretarySection/AdvisorAndSecretarySection';
 
@@ -26,14 +25,12 @@ const NoticeboardSection = () => {
     });
 
     return (
-        <div >
+        <div  data-aos="fade-up">
              <h2 className="noticeboard-title">Noticeboard</h2>
-            <section className="fkex flex-col lg:flex-row  noticeboard p-4">
+            <section className="noticeboard ">
            
-            <animated.div  className="icon-container">
-                <FontAwesomeIcon icon={faBell} size="2x" className="icon" />
-            </animated.div>
-            <animated.div style={boardProps} className="noticeboard-content">
+           
+            <animated.div style={boardProps} className="">
            
                 <div className="notice-list">
                     {notices.map((notice) => (

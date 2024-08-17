@@ -5,8 +5,10 @@ import banner from '/images/banner.jpg'
 const HeaderSection = () => {
     
     return (
-        <div>
-            <Navbar/>
+        <div className="relative">
+     <div className="fixed w-full">
+     <Navbar/>
+     </div>
             <Banner imageUrl={banner} />
             
         </div>
