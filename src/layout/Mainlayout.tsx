@@ -4,7 +4,7 @@ import HeaderSection from '../components/Header/HeaderSection';
 
 const MainLayout = () => {
     return (
-        <div className="mx-auto max-w-full bg-[#e6fbf9]">
+        <div className="mx-auto max-w-full bg-[#fbf6fb]">
             {/* Header or Navbar */}
          <HeaderSection/>
 
