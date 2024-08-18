@@ -16,17 +16,17 @@ const ImportantLinks = () => {
         <section data-aos="fade-up" className="p-6">
             <div className="container mx-auto">
                 <h1 className="mb-8 sm:mb-8 md:mb-16 lg:mb-16 xl:mb-16 2xl:mb-16 text-center text-xl md:text-2xl text-[#6265da] font-bold">Important Links</h1>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 hover:text-[#6265da]">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 hover:text-purple-500">
                     {links.map((link, index) => (
                         <a
                             key={index}
                             href={link.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block bg-white shadow-md rounded-lg p-4 transition-transform transform hover:scale-105 hover:bg-[#f0f4f8] hover:text-[#6265da]"
+                            className="block bg-white shadow-md rounded-lg p-4 transition-transform transform hover:scale-105 hover:bg-[#f0f4f8] hover:text-purple-500"
                         >
-                            <h3 className="text-lg font-semibold text-black flex items-center hover:text-[#6265da]">
-                                <FontAwesomeIcon icon={faExternalLinkAlt} className="mr-2 hover:text-[#6265da]" />
+                            <h3 className="text-sm text-gray-700 flex items-center hover:text-purple-500">
+                                <FontAwesomeIcon icon={faExternalLinkAlt} className="mr-2 text-purple-500" />
                                 {link.label}
                             </h3>
                         </a>

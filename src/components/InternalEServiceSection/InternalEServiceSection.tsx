@@ -30,15 +30,15 @@ const InternalEServiceSection = () => {
                             {services.map((service, index) => (
                                 <div
                                     key={index}
-                                    className="bg-white shadow-md border-l-4 border-purple-800 p-4 rounded-md flex items-center space-x-4 transition-transform transform hover:translate-x-2 hover:bg-gray-50 cursor-pointer"
+                                    className="bg-white shadow-md border-l-4 border-purple-500 p-4 rounded-md flex items-center space-x-4 transition-transform transform hover:translate-x-2 hover:bg-gray-50 cursor-pointer"
                                 >
                                     <FontAwesomeIcon
                                         icon={service.icon}
-                                        className="text-purple-800 text-xl"
+                                        className="text-purple-500 text-xl"
                                     />
                                     <div>
                                         <h3 className="text-lg font-semibold text-gray-700">{service.title}</h3>
-                                        <p className="text-gray-600">{service.description}</p>
+                                        <p className="text-gray-800">{service.description}</p>
                                     </div>
                                 </div>
                             ))}

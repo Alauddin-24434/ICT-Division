@@ -29,28 +29,28 @@ const VisitorCounter = () => {
                 <div className="flex items-center bg-white p-4 rounded-lg shadow-md">
                     <FaCalendarDay className="text-purple-500 text-2xl mr-4" />
                     <div>
-                        <h3 className="text-xl text-[#000] font-semibold">Today</h3>
+                        <h3 className="text-lg text-gray-700 font-semibold">Today</h3>
                         <p className="text-lg">{today}</p>
                     </div>
                 </div>
                 <div className="flex items-center bg-white p-4 rounded-lg shadow-md">
                     <FaCalendarAlt className="text-purple-500 text-2xl mr-4" />
                     <div>
-                        <h3 className="text-xl  text-[#000] font-semibold">Yesterday</h3>
+                        <h3 className="text-lg text-gray-700 font-semibold">Yesterday</h3>
                         <p className="text-lg">{yesterday}</p>
                     </div>
                 </div>
                 <div className="flex items-center bg-white p-4 rounded-lg shadow-md">
                     <FaUsers className="text-purple-500 text-2xl mr-4" />
                     <div>
-                        <h3 className="text-xl  text-[#000] font-semibold">Total Visitors</h3>
+                        <h3 className="text-lg text-gray-700 font-semibold">Total Visitors</h3>
                         <p className="text-lg">{total}</p>
                     </div>
                 </div>
                 <div className="flex items-center bg-white p-4 rounded-lg shadow-md">
                     <FaEye className="text-purple-500 text-2xl mr-4" />
                     <div>
-                        <h3 className="text-xl  text-[#000] font-semibold">Online Now</h3>
+                        <h3 className="  text-lg text-gray-700 font-semibold">Online Now</h3>
                         <p className="text-lg">{online}</p>
                     </div>
                 </div>

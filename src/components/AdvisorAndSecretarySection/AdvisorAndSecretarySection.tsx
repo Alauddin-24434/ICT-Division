@@ -42,10 +42,10 @@ const AdvisorAndSecretarySection = () => {
                 {/* Right side - About Section */}
                 <div className="flex-1 bg-white rounded-lg shadow-lg p-6">
                     <p className="text-gray-700 mb-4">
-                        <strong className="text-[#6265da]">Honorable Advisor:</strong> This role involves providing high-level strategic advice and guidance to ensure that the organization’s goals and objectives are met. The Advisor is responsible for shaping key policies, fostering relationships with stakeholders, and offering insights on critical decisions that affect the organization's direction and success.
+                        <strong className="text-gray-800">Honorable Advisor:</strong> This role involves providing high-level strategic advice and guidance to ensure that the organization’s goals and objectives are met. The Advisor is responsible for shaping key policies, fostering relationships with stakeholders, and offering insights on critical decisions that affect the organization's direction and success.
                     </p>
                     <p className="text-gray-700">
-                        <strong className="text-[#6265da]">Honorable Secretary:</strong> The Secretary plays a pivotal role in the day-to-day operations of the organization. This includes overseeing administrative functions, managing internal processes, and ensuring smooth operational activities. The Secretary also handles communication with various departments and maintains the organizational structure to support effective governance.
+                        <strong className="text-gray-800">Honorable Secretary:</strong> The Secretary plays a pivotal role in the day-to-day operations of the organization. This includes overseeing administrative functions, managing internal processes, and ensuring smooth operational activities. The Secretary also handles communication with various departments and maintains the organizational structure to support effective governance.
                     </p>
                 </div>
             </div>

@@ -21,7 +21,7 @@ const AdSlider: React.FC = () => {
             </div>
             <div className="ad-slider-track flex items-center">
             {ads.map((ad) => (
-                    <div key={ad.id + '-duplicate'} className="ad-card bg-[#951aa1] text-white text-sm md:text-xl lg:text-xl xl:text-xl 2xl:text-xl py-2 px-4 m-2">
+                    <div key={ad.id + '-duplicate'} className="ad-card bg-purple-500 text-white text-sm md:text-xl lg:text-xl xl:text-xl 2xl:text-xl py-2 px-4 m-2">
                         {ad.text}
                     </div>
                 ))}

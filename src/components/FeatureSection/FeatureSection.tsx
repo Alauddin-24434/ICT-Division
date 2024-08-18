@@ -15,7 +15,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, links, imgUrl }) => {
     <div className="w-64 sm:w-64 md:w-full lg:w-full xl:w-full 2xl:w-full">
       <img className="w-full rounded-t-xl" src={imgUrl || placeholderImageUrl} alt={title} />
       <div className="mt-4 text-green-600 text-center">
-        <h1 className="text-sm text-purple-500 font-bold">{title}</h1>
+        <h1 className="text-sm text-gray-800 font-bold">{title}</h1>
         {links && (
           <ul className="mt-4 text-gray-600 space-y-2">
             {links.map((link, index) => (

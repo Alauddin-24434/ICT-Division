@@ -34,12 +34,14 @@
   bottom: 0;
   left: 0;
   border-width: 40px 40px 0 0;
-  border-color: #951aa1 transparent transparent transparent; /* Black triangle */
+  border-color: #a46ede transparent transparent transparent; /* Black triangle */
+
 }
 
 .triangle-top-right {
   top: 0;
   right: 0;
   border-width: 0 0 40px 40px;
-  border-color: transparent transparent #951aa1 transparent; /* Black triangle */
+
+  border-color: transparent transparent #a46ede transparent; /* Black triangle */
 }

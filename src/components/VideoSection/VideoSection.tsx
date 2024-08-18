@@ -18,8 +18,8 @@ const VideoCard = ({ src, title, description }: VideoCardProps) => {
           allowFullScreen
         ></iframe>
         <div className="p-4">
-          <h3 className="text-xl font-semibold text-[#951aa1]">{title}</h3>
-          <p className="text-gray-600 mt-2">{description.slice(0,40)}</p>
+          <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
+          <p className="text-gray-800 mt-2">{description.slice(0,40)}</p>
         </div>
       </div>
     </div>
@@ -46,7 +46,7 @@ const VideoSection = () => {
   return (
     <section data-aos="fade-up"  className="p-4">
  
-      <h1 className="mb-[48px]  text-center text-xl md:text-2xl text-[#6265da] font-bold">
+      <h1 className="mb-[48px] text-center text-xl md:text-2xl text-[#6265da] font-bold">
           Watch Our Latest Videos
         </h1>
         <div   className="flex flex-wrap justify-center gap-8">

@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 
-
 @layer utilities {
     .neo-shadow {
         box-shadow: 5px 5px 10px #d1d9e6, -5px -5px 10px #ffffff;

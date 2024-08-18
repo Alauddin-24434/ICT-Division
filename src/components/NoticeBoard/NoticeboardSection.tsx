@@ -24,11 +24,11 @@ const KeyResources = () => {
                             className="cursor-pointer shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 w-full bg-white"
                         >
                             <div className="p-4 flex items-center">
-                                <FontAwesomeIcon
+                                <FontAwesomeIcon 
                                     icon={card.icon}
-                                    className="text-gray-500 mr-4 text-xl"
+                                    className="text-purple-500 mr-4 text-xl"
                                 />
-                                <h3 className="text-sm font-semibold mb-2 text-gray-700">
+                                <h3 className="text-sm  mb-2 text-gray-800">
                                     {card.title.length > 24 ? `${card.title.slice(0, 24)}...` : card.title}
                                 </h3>
                             </div>
@@ -72,11 +72,11 @@ const NoticeboardSection = () => {
                             {notices.map((notice) => (
                                 <div
                                     key={notice.id}
-                                    className="bg-white shadow-md border-l-4 border-purple-800 p-4 rounded-md flex items-center space-x-4 transition-transform transform hover:translate-x-2 hover:bg-gray-100 cursor-pointer"
+                                    className="bg-white shadow-md border-l-4 border-purple-500 p-4 rounded-md flex items-center space-x-4 transition-transform transform hover:translate-x-2 hover:bg-gray-100 cursor-pointer"
                                 >
                                     <FontAwesomeIcon
                                         icon={notice.icon}
-                                        className="text-purple-800 text-xl"
+                                        className="text-purple-500 text-xl"
                                     />
                                     <h3 className="text-lg text-gray-700">
                                         {notice.title.length > 66 ? `${notice.title.slice(0, 66)}...` : notice.title}

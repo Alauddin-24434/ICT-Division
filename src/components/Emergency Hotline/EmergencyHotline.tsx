@@ -51,9 +51,9 @@ const EmergencyHotline = () => {
             <div  className=" triangle triangle-bottom-left"></div>
             <div className="triangle triangle-top-right"></div>
            <div className='avater absolute -top-6 rounded-full border-2 '>
-           <img src={hotline.icon} className="w-14 h-14 rounded-full  border-2 " alt="" />
+           <img src={hotline.icon} className="w-14 h-14 rounded-full  border-2 " alt="icon" />
            </div>
-            <span className="font-semibold text-center text-sm">{hotline.title}.</span>
+            <span className="font-semibold text-center text-xs text-gray-700">{hotline.title}.</span>
           </div>
         ))}
       </div>
