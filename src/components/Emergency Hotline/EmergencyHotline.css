@@ -1,48 +1,45 @@
 .hotlineCard {
-    position: relative; /* Ensure triangles are positioned relative to the card */
+  position: relative; /* Ensure triangles are positioned relative to the card */
 
-    background-color: #fff; /* Background color for the card */
-    border: 1px solid #ddd; /* Border for the card */
-
+  background-color: #fff; /* Background color for the card */
+  border: 1px solid #ddd; /* Border for the card */
+  border-radius: 10px;
   justify-content: center;
 
-    transition: transform 0.3s ease; /* Smooth transition for hover effects */
-  }
-  .hotlineCard:hover{
-    cursor: pointer;
-  }
-  
-  .hotlineCard:hover {
-    transform: scale(1.05); /* Slight scale on hover (optional) */
-  }
-  
-  .triangle {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    opacity: 0; /* Hide triangles by default */
-    transition: opacity 0.3s ease; /* Smooth transition for opacity */
-    rotate: -90deg;
- 
-  }
-  
-  .hotlineCard:hover .triangle {
-    opacity: 1; /* Show triangles on hover */
-  }
-  
-  .triangle-bottom-left {
-    bottom: 0;
-    left: 0;
-    border-width: 40px 40px 0 0;
-    border-color: #00ffff transparent transparent transparent; /* Black triangle */
-    
-  }
-  
-  .triangle-top-right {
-    top: 0;
-    right: 0;
-    border-width: 0 0 40px 40px;
-    border-color: transparent transparent #00ffff transparent; /* Black triangle */
-  }
-  
+  transition: transform 0.3s ease; /* Smooth transition for hover effects */
+}
+.hotlineCard:hover {
+  cursor: pointer;
+}
+
+.hotlineCard:hover {
+  transform: scale(1.05); /* Slight scale on hover (optional) */
+}
+
+.triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  opacity: 0; /* Hide triangles by default */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+  rotate: -90deg;
+}
+
+.hotlineCard:hover .triangle {
+  opacity: 1; /* Show triangles on hover */
+}
+
+.triangle-bottom-left {
+  bottom: 0;
+  left: 0;
+  border-width: 40px 40px 0 0;
+  border-color: #951aa1 transparent transparent transparent; /* Black triangle */
+}
+
+.triangle-top-right {
+  top: 0;
+  right: 0;
+  border-width: 0 0 40px 40px;
+  border-color: transparent transparent #951aa1 transparent; /* Black triangle */
+}

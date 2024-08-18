@@ -22,35 +22,35 @@ const VisitorCounter = () => {
     }, []);
 
     return (
-        <div className="visitor-counter p-6 bg-gradient-to-r  rounded-lg">
+        <div className="visitor-counter p-4 rounded-lg ">
           
-            <h1 className="mb-16 text-center text-3xl md:text-4xl text-[#6265da] font-bold">Visitor Statistics</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <h1 className="mb-8 sm:mb-8 md:mb-16 lg:mb-16 xl:mb-16 2xl:mb-16 text-center text-2xl md:text-4xl text-[#6265da] font-bold">Visitor Statistics</h1>
+            <div  data-aos="fade-up" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div className="flex items-center bg-white p-4 rounded-lg shadow-md">
-                    <FaCalendarDay className="text-blue-500 text-2xl mr-4" />
+                    <FaCalendarDay className="text-purple-500 text-2xl mr-4" />
                     <div>
-                        <h3 className="text-xl text-[#951aa1] font-semibold">Today</h3>
+                        <h3 className="text-xl text-[#000] font-semibold">Today</h3>
                         <p className="text-lg">{today}</p>
                     </div>
                 </div>
                 <div className="flex items-center bg-white p-4 rounded-lg shadow-md">
-                    <FaCalendarAlt className="text-teal-500 text-2xl mr-4" />
+                    <FaCalendarAlt className="text-purple-500 text-2xl mr-4" />
                     <div>
-                        <h3 className="text-xl text-[#951aa1] font-semibold">Yesterday</h3>
+                        <h3 className="text-xl  text-[#000] font-semibold">Yesterday</h3>
                         <p className="text-lg">{yesterday}</p>
                     </div>
                 </div>
                 <div className="flex items-center bg-white p-4 rounded-lg shadow-md">
                     <FaUsers className="text-purple-500 text-2xl mr-4" />
                     <div>
-                        <h3 className="text-xl text-[#951aa1] font-semibold">Total Visitors</h3>
+                        <h3 className="text-xl  text-[#000] font-semibold">Total Visitors</h3>
                         <p className="text-lg">{total}</p>
                     </div>
                 </div>
                 <div className="flex items-center bg-white p-4 rounded-lg shadow-md">
-                    <FaEye className="text-green-500 text-2xl mr-4" />
+                    <FaEye className="text-purple-500 text-2xl mr-4" />
                     <div>
-                        <h3 className="text-xl text-[#951aa1] font-semibold">Online Now</h3>
+                        <h3 className="text-xl  text-[#000] font-semibold">Online Now</h3>
                         <p className="text-lg">{online}</p>
                     </div>
                 </div>

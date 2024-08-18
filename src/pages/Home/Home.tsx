@@ -8,7 +8,7 @@ import ImportantLinks from "../../components/ImportantLinkSection/ImportantLinkS
 
 
 import NoticeboardSection from "../../components/NoticeBoard/NoticeboardSection";
-import Poster from "../../components/Poster/Poster";
+
 import VideoSection from "../../components/VideoSection/VideoSection";
 import VisitorCounter from "../../components/VisitiorCounter/VisitiorCounter";
 
@@ -27,7 +27,7 @@ const Home = () => {
   <ImportantLinks/>
   <AdvisorAndSecretarySection/>
   <VideoSection/>
-  <Poster/>
+
        <VisitorCounter/>
       
       

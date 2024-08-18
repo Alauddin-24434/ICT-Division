@@ -1,6 +1,7 @@
 
 import { Outlet } from 'react-router-dom';
 import HeaderSection from '../components/Header/HeaderSection';
+import Footer from '../components/Footer/Footer';
 
 const MainLayout = () => {
     return (
@@ -14,9 +15,7 @@ const MainLayout = () => {
             </main>
 
             {/* Footer */}
-            <footer className="mt-8">
-                <p className="text-center text-gray-500">© 2024 Your Company</p>
-            </footer>
+           <Footer/>
         </div>
     );
 };

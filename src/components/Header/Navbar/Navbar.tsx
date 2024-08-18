@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import { FaFacebook, FaTwitter, FaLinkedin, FaBars } from "react-icons/fa";
+import {FaBars } from "react-icons/fa";
 import Container from "../../Container/Container";
 import { useState } from "react";
 import { menuItems } from "./navMenuItems";
-
+import { IoSearch } from "react-icons/io5";
 
 
 const Navbar = () => {
@@ -28,19 +28,18 @@ const Navbar = () => {
   };
 
   return (
-   <nav className="border py-4 lg:bg-transparent bg-slate-300 shadow-dark-mild lg:flex-wrap lg:justify-start lg:py-4">
+   <nav className="border   bg-[#3b3d83] shadow-dark-mild lg:flex-wrap lg:justify-start lg:py-4">
       <Container>
       <div className="flex w-full flex-wrap items-center justify-between">
           {/* Social Media Icons */}
-          <div className="flex justify-end items-center p-2 space-x-4 text-gray-600">
-            <FaFacebook />
-            <FaTwitter />
-            <FaLinkedin />
+          <div className="hidden sm:hidden md:block lg:block xl:block 2xl:block bg-white rounded-full">
+        <img src="https://i.ibb.co/QDgjGhp/logo-removebg-preview.png" alt="logo" className="h-9 w-9" />
           </div>
+    
 
           {/* Hamburger Button for Mobile View */}
           <button
-            className="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+            className="block border-0 bg-transparent px-2 text-[#fff] hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
             type="button"
             aria-controls="navbarSupportedContent8"
             aria-expanded="false"
@@ -56,6 +55,11 @@ const Navbar = () => {
           >
             <FaBars size={24} />
           </button>
+                      {/* Search Bar */}
+       <span className="text-[#fff] block md:hidden lg:hidden hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 mr-4">
+       <IoSearch/>
+       </span>
+
 
           {/* Collapsible Navbar Container */}
           <div
@@ -67,14 +71,14 @@ const Navbar = () => {
               {menuItems.map((item) => (
                 <li
                   key={item.label}
-                  className="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2 relative"
+                  className="my-4  ps-2 lg:my-0 lg:pe-1 lg:ps-2 relative"
                 >
                   {item.dropdown ? (
                     <>
                       <button
                         onClick={() => toggleDropdown(item.id)}
                         aria-expanded={activeDropdown === item.id}
-                        className="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2 flex items-center"
+                        className="p-0 text-[#fff] transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2 flex items-center"
                       >
                         {item.label}
                       </button>
@@ -142,7 +146,7 @@ const Navbar = () => {
                   ) : (
                     <Link
                       to={item.path || "/"}
-                      className="text-black dark:text-white lg:px-2"
+                      className="text-[#fff] hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 lg:px-2"
                     >
                       {item.label}
                     </Link>
@@ -153,13 +157,9 @@ const Navbar = () => {
           </div>
 
           {/* Search Bar */}
-          <div className="mt-2 lg:mt-0 lg:block hidden">
-            <input
-              type="text"
-              placeholder="Search..."
-              className="bg-transparent border p-2 rounded-md w-full lg:w-auto"
-            />
-          </div>
+       <span className="text-[#fff] hidden md:block lg:block hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 lg:px-2">
+       <IoSearch/>
+       </span>
         </div>
       </Container>
     </nav>

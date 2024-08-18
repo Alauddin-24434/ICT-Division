@@ -11,8 +11,8 @@ interface FeatureCardProps {
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ title, links, imgUrl }) => {
   return (
-    <div className="mt-8 py-4 px-4 rounded-lg bg-[#fff] transform hover:scale-105 transition duration-500 mx-auto sm:mx-0 max-w-xs">
-    <div className="w-full">
+    <div  data-aos="fade-up"  className=" py-4 px-4 rounded-lg bg-[#fff] shadow-md transform hover:scale-105 transition duration-500 mx-auto sm:mx-0 max-w-xs ">
+    <div className="w-64 sm:w-64 md:w-full lg:w-full xl:w-full 2xl:w-full">
       <img className="w-full rounded-t-xl" src={imgUrl || placeholderImageUrl} alt={title} />
       <div className="mt-4 text-green-600 text-center">
         <h1 className="text-sm text-[#951aa1] font-bold">{title}</h1>
@@ -190,11 +190,11 @@ const FeatureSection: React.FC = () => {
 
   return (
    
-<section data-aos="fade-up" className=" relative overflow-hidden">
+<section  className=" relative overflow-hidden p-2">
       <div className="container mx-auto ">
       
-        <h1 className="mt-8 text-center text-3xl md:text-4xl text-[#6265da] font-bold">Our Features & Services</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 mt-12">
+      <h1 className="mb-8 sm:mb-8 md:mb-16 lg:mb-16 xl:mb-16 2xl:mb-16 text-center text-2xl md:text-4xl text-[#6265da] font-bold">Our Features & Services</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 ">
           {features.map((feature, index) => (
             <FeatureCard
               key={index}

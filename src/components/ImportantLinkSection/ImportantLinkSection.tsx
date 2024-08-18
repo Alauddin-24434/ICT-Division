@@ -15,8 +15,8 @@ const ImportantLinks = () => {
         <section className=" p-6">
             <div className="container mx-auto">
              
-                <h1 className="mb-16 text-center text-3xl md:text-4xl text-[#6265da] font-bold">Important Links</h1>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <h1 className="mb-8 sm:mb-8 md:mb-16 lg:mb-16 xl:mb-16 2xl:mb-16 text-center text-2xl md:text-4xl text-[#6265da] font-bold">Important Links</h1>
+                <div  data-aos="fade-up" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {links.map((link, index) => (
                         <a
                             key={index}
