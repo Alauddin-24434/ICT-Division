@@ -22,10 +22,10 @@ const VisitorCounter = () => {
     }, []);
 
     return (
-        <div className="visitor-counter p-4 rounded-lg ">
+        <div data-aos="fade-up" className="visitor-counter p-4 rounded-lg ">
           
-          <h1 className="mb-8 sm:mb-8 md:mb-16 lg:mb-16 xl:mb-16 2xl:mb-16 text-center text-2xl md:text-4xl text-[#6265da] font-bold">Visitor Statistics</h1>
-            <div  data-aos="fade-up" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <h1 className="mb-[48px] text-center text-xl md:text-2xl text-[#6265da] font-bold">Visitor Statistics</h1>
+            <div   className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div className="flex items-center bg-white p-4 rounded-lg shadow-md">
                     <FaCalendarDay className="text-purple-500 text-2xl mr-4" />
                     <div>

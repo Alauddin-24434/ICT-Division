@@ -1,0 +1,25 @@
+.ad-slider {
+    width: 100%;
+    position: relative;
+  }
+  
+  .ad-slider-track {
+    display: flex;
+    animation: scroll 50s linear infinite;
+  }
+  
+  .ad-card {
+    min-width: 200px; /* Adjust card width as needed */
+
+    flex-shrink: 0;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

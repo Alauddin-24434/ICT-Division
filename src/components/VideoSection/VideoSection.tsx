@@ -44,12 +44,12 @@ const VideoSection = () => {
   ];
 
   return (
-    <section className="p-4 ">
+    <section data-aos="fade-up"  className="p-4">
  
-      <h1 className="my-8 sm:my-8 md:my-16 lg:my-16 xl:my-16 2xl:my-16 text-center text-2xl md:text-4xl text-[#6265da] font-bold">
+      <h1 className="mb-[48px]  text-center text-xl md:text-2xl text-[#6265da] font-bold">
           Watch Our Latest Videos
         </h1>
-        <div  data-aos="fade-up"  className="flex flex-wrap justify-center gap-8">
+        <div   className="flex flex-wrap justify-center gap-8">
           {videos.map((video, index) => (
             <VideoCard
               key={index}

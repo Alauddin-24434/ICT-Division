@@ -4,6 +4,7 @@ import Container from "../../Container/Container";
 import { useState } from "react";
 import { menuItems } from "./navMenuItems";
 import { IoSearch } from "react-icons/io5";
+import { MdArrowDropDown } from "react-icons/md";
 
 
 const Navbar = () => {
@@ -28,7 +29,7 @@ const Navbar = () => {
   };
 
   return (
-   <nav className="border   bg-[#3b3d83] shadow-dark-mild lg:flex-wrap lg:justify-start lg:py-4">
+   <nav className="border   bg-[#6265da] shadow-dark-mild lg:flex-wrap lg:justify-start lg:py-4">
       <Container>
       <div className="flex w-full flex-wrap items-center justify-between">
           {/* Social Media Icons */}
@@ -81,6 +82,7 @@ const Navbar = () => {
                         className="p-0 text-[#fff] transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2 flex items-center"
                       >
                         {item.label}
+                        
                       </button>
 
                       {/* Dropdown Menu */}
@@ -103,10 +105,12 @@ const Navbar = () => {
                                       onClick={() =>
                                         toggleSubDropdown(column.title)
                                       }
-                                      className="block w-64  text-center px-4 py-2 text-sm text-neutral-700 hover:bg-gray-100 dark:text-white dark:hover:bg-neutral-800"
+                                      className="flex justify-center items-center w-64   text-center px-4 py-2 text-sm text-neutral-700 hover:bg-gray-100 dark:text-white dark:hover:bg-neutral-800"
                                     >
                                       {column.title}
+                                      <MdArrowDropDown />
                                     </button>
+                                   
                                     <hr />
                                   </li>
                                  

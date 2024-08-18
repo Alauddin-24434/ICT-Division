@@ -40,9 +40,9 @@ const emergencyHotlines = [
 const EmergencyHotline = () => {
   return (
     <div >
-        <section  >
-        <h1 className="my-8  sm:my-8 md:my-16 lg:my-16 xl:my-16 2xl:my-16 text-center text-2xl md:text-4xl text-[#6265da] font-bold">Emergency Hotline</h1>
-      <div data-aos="fade-up" className="mx-auto max-w-7xl grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 2xl:grid-cols-5 gap-12 p-2">
+        <section data-aos="fade-up"  >
+        <h1 className="my-8  sm:my-8 md:my-16 lg:my-16 xl:my-16 2xl:my-16 text-center text-xl md:text-2xl text-[#6265da] font-bold">Emergency Hotline</h1>
+      <div className="mx-auto max-w-7xl grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 2xl:grid-cols-5 gap-12 p-2">
         {emergencyHotlines.map((hotline, index) => (
           <div
             key={index}
