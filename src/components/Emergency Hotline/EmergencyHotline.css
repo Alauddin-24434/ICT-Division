@@ -1,18 +1,15 @@
 .hotlineCard {
   position: relative; /* Ensure triangles are positioned relative to the card */
-
   background-color: #fff; /* Background color for the card */
   border: 1px solid #ddd; /* Border for the card */
+  height: 120px;
   border-radius: 10px;
   justify-content: center;
-
   transition: transform 0.3s ease; /* Smooth transition for hover effects */
 }
-.hotlineCard:hover {
-  cursor: pointer;
-}
 
 .hotlineCard:hover {
+  cursor: pointer;
   transform: scale(1.05); /* Slight scale on hover (optional) */
 }
 
@@ -23,7 +20,6 @@
   border-style: solid;
   opacity: 0; /* Hide triangles by default */
   transition: opacity 0.3s ease; /* Smooth transition for opacity */
-  rotate: -90deg;
 }
 
 .hotlineCard:hover .triangle {
@@ -34,14 +30,24 @@
   bottom: 0;
   left: 0;
   border-width: 40px 40px 0 0;
-  border-color: #a46ede transparent transparent transparent; /* Black triangle */
-
+  rotate: -90deg;
+  border-color: #a46ede transparent transparent transparent; /* Triangle color */
 }
 
 .triangle-top-right {
   top: 0;
   right: 0;
   border-width: 0 0 40px 40px;
+  rotate: -90deg;
+  border-color: transparent transparent #a46ede transparent; /* Triangle color */
+}
 
-  border-color: transparent transparent #a46ede transparent; /* Black triangle */
+.avatar {
+  top: -1.5rem;
+}
+
+@media (max-width: 640px) {
+  .avatar {
+    top: -1.5rem;
+  }
 }
