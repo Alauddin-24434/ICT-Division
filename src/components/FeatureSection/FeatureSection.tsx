@@ -1,4 +1,5 @@
 import React from 'react';
+import SectionTitle from '../Shared/SectionTitle/SectionTilte';
 
 // Define the placeholder image URL
 const placeholderImageUrl = "https://via.placeholder.com/256";
@@ -190,10 +191,10 @@ const FeatureSection: React.FC = () => {
 
   return (
    
-<section data-aos="fade-up"   className=" relative overflow-hidden p-2">
-      <div className="container mx-auto ">
-      
-      <h1 className="mb-8 sm:mb-8 md:mb-16 lg:mb-16 xl:mb-16 2xl:mb-16 text-center text-xl md:text-2xl text-[#6265da] font-bold">Our Features & Services</h1>
+<section data-aos="fade-up"   className=" relative overflow-hidden p-4">
+  
+     
+      <SectionTitle title="Our Features & Services" />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 ">
           {features.map((feature, index) => (
             <FeatureCard
@@ -204,7 +205,7 @@ const FeatureSection: React.FC = () => {
             />
           ))}
         </div>
-      </div>
+     
     </section>
   );
 };

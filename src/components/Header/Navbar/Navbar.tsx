@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import {FaBars } from "react-icons/fa";
-import Container from "../../Container/Container";
+import Container from "../../Shared/Container/Container";
 import { useState } from "react";
 import { menuItems } from "./navMenuItems";
 import { IoSearch } from "react-icons/io5";

@@ -14,8 +14,8 @@ const AdSlider: React.FC = () => {
     ];
 
     return (
-        <div className="ad-slider overflow-hidden whitespace-nowrap mx-auto max-w-7xl">
-            <div className="flex items-center ml-2 ">
+        <div className="ad-slider overflow-hidden whitespace-nowrap mx-auto max-w-7xl hidden md:block lg:block xl:block 2xl:block">
+            <div className="flex items-center">
                 <FontAwesomeIcon icon={faExclamationTriangle} className="text-red-600 mr-2" />
                 <p className="text-red-600 font-bold text-sm md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">High Alert</p>
             </div>

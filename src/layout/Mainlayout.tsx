@@ -6,7 +6,7 @@ import MessengerModalSection from '../components/MessengerModalSection/Messenger
 
 const MainLayout = () => {
     return (
-        <div className="mx-auto max-w-full bg-[#e7d8e7] relative">
+        <div className="mx-auto max-w-full bg-[#f7f6f7] relative">
             {/* Header or Navbar */}
             <HeaderSection/>
 

@@ -1,3 +1,4 @@
+import SectionTitle from "../Shared/SectionTitle/SectionTilte";
 
 type VideoCardProps = {
   src: string;
@@ -45,10 +46,7 @@ const VideoSection = () => {
 
   return (
     <section data-aos="fade-up"  className="p-4">
- 
-      <h1 className="mb-[48px] text-center text-xl md:text-2xl text-[#6265da] font-bold">
-          Watch Our Latest Videos
-        </h1>
+        <SectionTitle title="Watch Our Latest Videos" />
         <div   className="flex flex-wrap justify-center gap-8">
           {videos.map((video, index) => (
             <VideoCard
@@ -59,7 +57,6 @@ const VideoSection = () => {
             />
           ))}
         </div>
-      
     </section>
   );
 };

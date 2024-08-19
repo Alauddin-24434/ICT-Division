@@ -2,6 +2,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode, faEnvelope, faFileAlt, faCogs, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { useSpring, animated } from 'react-spring'; // Ensure you have react-spring installed
+import SectionTitle from '../Shared/SectionTitle/SectionTilte';
 
 const InternalEServiceSection = () => {
     const services = [
@@ -19,10 +20,8 @@ const InternalEServiceSection = () => {
     });
 
     return (
-        <section data-aos="fade-up" className="p-4 ">
-            <h1 className="my-8 sm:my-8 md:my-16 lg:my-16 xl:my-16 2xl:my-16 text-center text-xl md:text-2xl text-[#6265da] font-bold">
-                Internal E-Service Section
-            </h1>
+        <section data-aos="fade-up" className="p-4">
+            <SectionTitle title="Internal E-Service Section"  />
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
                 <div className="flex-1">
                     <animated.div style={sectionProps}>

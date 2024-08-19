@@ -11,7 +11,7 @@ const Banner = () => {
 
     return (
       <div className='shadow-md'>
-          <div className="relative mx-auto max-w-7xl h-64 sm:h-72 md:h-96 lg:h-screen  overflow-hidden">
+          <div className="relative mx-auto max-w-7xl h-screen sm:h-screen md:h-96 lg:h-screen  overflow-hidden">
             
             <div className="flex flex-col md:flex-row items-center justify-between w-full p-4">
                 {/* Text Content */}
